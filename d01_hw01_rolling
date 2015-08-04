@@ -1,0 +1,30 @@
+int posX = 250;
+int posY = 250;
+
+void setup()  {
+ size(500,500); 
+ frameRate(15);
+}
+
+void draw() {
+  background(255);
+  
+  noStroke();
+  fill(0,150,150,255);
+  ellipse(posX,posY,100,100);
+  
+  posX = posX + 2;
+  
+  noStroke();
+  fill(45,255,0);
+  rect(250,300,100,100);
+  
+  noStroke();
+  fill(150,0,50);
+  rect(150,200,100,100);
+  
+  noStroke();
+  fill(35,250,255);
+  rect(200,250,100,100);
+  
+}
