@@ -19,6 +19,8 @@ class Puzzle {
   void display() {
 //    update();
 //
+//  colorMode(HSB, 360, 100, 100);  
+
     noStroke();
     arc(width/2, height/2, diameter, diameter, lastAngle, lastAngle+radians(num));
     lastAngle += radians(num);

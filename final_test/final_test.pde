@@ -2,7 +2,7 @@ Puzzle[] myPuzzles;
 int myScale;
 
 void setup() {
-  size(200, 200);
+  size(700, 700);
   myScale = 20;
   myPuzzles = new Puzzle[13];
 
@@ -28,6 +28,7 @@ void splitData(String[] myArray) {
 
     myPuzzles[i] = new Puzzle(special, num);
     
+
     
   }
 }
@@ -45,9 +46,9 @@ void pieChart(float diameter, String[] data) {
   float lastAngle = 0;
   for (int i = 0; i < data.length; i++) {
     float gray = map(i, 0, data.length, 0, 255);
-    fill(gray);
-    arc(width/2, height/2, diameter, diameter, lastAngle, lastAngle+radians(angles[i]));
-    lastAngle += radians(angles[i]);
+    fill(0,10);
+    arc(width/2, height/2, diameter, diameter, lastAngle, lastAngle+radians(myPuzzles[i]));
+    lastAngle += radians(myPuzzles[i]);
   }
 }
 
